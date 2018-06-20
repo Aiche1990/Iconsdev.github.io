@@ -1,0 +1,113 @@
+/* Button Colors */
+/* Font Colors */
+/* Base Sty;es */
+* {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box; }
+
+/* Header Styles */
+header {
+  width: 100%;
+  height: 768px;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center center; }
+  header .container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto; }
+    header .container .logo {
+      width: 50px;
+      height: 50px;
+      background-image: url("../img/logo.svg");
+      float: left;
+      margin-top: 26px; }
+    header .container nav {
+      float: right;
+      margin-top: 24px;
+      display: flex; }
+      header .container nav a {
+        font-size: 18px;
+        color: white;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 10px 15px 10px 15px;
+        transition: .3s ease; }
+      header .container nav a:hover {
+        background: #f79ac9; }
+    header .container .opening {
+      padding-top: 223px;
+      clear: both;
+      display: grid;
+      grid-template-columns: 40% 60%;
+      justify-content: center; }
+      header .container .opening .branding {
+        width: 230px;
+        height: 167px;
+        background-image: url("../img/branding.svg");
+        margin: 0 auto; }
+      header .container .opening .text-wrapper h1 {
+        font-size: 60px;
+        color: white;
+        text-transform: uppercase; }
+      header .container .opening .text-wrapper .kicker {
+        font-size: 20px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 700; }
+      header .container .opening .text-wrapper .btn-learn-more {
+        border: 0;
+        width: 200px;
+        height: 40px;
+        font-size: 20px;
+        color: white;
+        font-weight: 700;
+        background: #f79ac9;
+        border-radius: 15px;
+        margin-top: 23px;
+        transition: .3s ease;
+        cursor: pointer; }
+      header .container .opening .text-wrapper .btn-learn-more:hover {
+        background: white;
+        color: #f79ac9;
+        width: 210px; }
+
+/* Media Queries */
+@media screen and (max-width: 731px) {
+  header .container {
+    width: 100%; }
+    header .container .logo {
+      float: none;
+      margin: 0 auto;
+      padding-top: 100px;
+      background-repeat: no-repeat;
+      background-position: center center; }
+    header .container nav {
+      float: none;
+      margin: 0 auto;
+      width: 100%;
+      justify-content: center; } }
+    @media screen and (max-width: 731px) and (max-width: 462px) {
+      header .container nav a {
+        font-size: 14px; } }
+  @media screen and (max-width: 731px) and (max-width: 462px) and (max-width: 386px) {
+    header .container nav a {
+      font-size: 10px; } }
+
+@media screen and (max-width: 731px) {
+    header .container .opening {
+      padding-top: 100px;
+      display: block; }
+      header .container .opening .text-wrapper {
+        text-align: center; }
+        header .container .opening .text-wrapper h1 {
+          margin-top: 30px; } }
+        @media screen and (max-width: 731px) and (max-width: 425px) {
+          header .container .opening .text-wrapper h1 {
+            font-size: 48px; } }
+        @media screen and (max-width: 731px) and (max-width: 339px) {
+          header .container .opening .text-wrapper h1 {
+            font-size: 36px;
+            width: auto; } }
