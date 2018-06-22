@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/app.css">
     <title>Icons Dev</title>
 </head>
-<body>
+<body onresize="checkRes()" onload="checkRes()">
     <header>
 
         <div class="container">
@@ -35,5 +35,119 @@
         </div>
 
     </header>
+
+    <section id="services">
+        <h1>What<br>We<br>Do<hr></h1>
+        
+        <div class="services-wrapp">
+            <div class="service">
+                <div class="img-webdev"></div>
+                <div class="txt">
+                    <h3>Web Develoment</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit ornare metus, a vestibulum risus  venenatis idSuspendisse.</p>
+                </div>    
+            </div>
+            <div class="service">
+                <div class="img-webdes"></div>
+                <div class="txt">
+                    <h3>Web Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit ornare metus, a vestibulum risus  venenatis idSuspendisse.</p>
+           
+                </div>
+            </div>
+            <div class="service">
+                <div class="img-uxdes"></div>
+                <div class="txt">
+                    <h3>UX Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit ornare metus, a vestibulum risus  venenatis idSuspendisse.</p>    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work">
+
+        <div class="section-container">
+            <h1>Our<br>Latest<br>Work<hr></h1>
+
+            <div class="work-container">
+                <div class="works-wrap">
+                    <div class="works">
+                    <div class="work-img" onclick="activeOne()" onmouseout="exitOne()"></div>
+                    </div>
+                    <div class="works">
+                        <div class="work-img-2" onclick="activeTwo()" onmouseout="exitTwo()"></div>
+                    </div>
+                    <div class="works">
+                        <div class="work-img-3" onclick="activeThree()" onmouseout="exitThree()"></div>
+                    </div>
+                </div>
+
+                <button>View all</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="testimonials">
+        <div class="case-1">
+            <h2 class="n-1">Tom Huedson</h2>
+            <div class="img-cont-1"> 
+                <div class="img-1"></div>
+            </div>
+            <div class="desc-1">
+                <h4>CEO of Cellstra</h4>
+                <p><strong >"</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas quis non minus deserunt sapiente fugiat itaque praesentium molestias asperiores<strong>"</strong></p>
+            </div>
+        </div>
+        <div class="case-2">
+            <h2 class="n-2">Jhuarzon Diaz</h2>
+            <div class="img-cont-2"> 
+                <div class="img-2"></div>
+            </div>
+            <div class="desc-2">
+                <h4>Product Manager of Writhe</h4>
+                <p><strong>"</strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus dolorem commodi sapiente fugiat itaque praesentium molestias asperiores porro..<strong>"</strong></p>
+            </div>
+        </div>
+        <div class="case-3">
+            <h2 class="n-3">Alfred Kendrick</h2>
+            <div class="img-cont-3"> 
+                <div class="img-3"></div>
+            </div>
+            <div class="desc-3">
+                <h4>Director of NAL Industrial</h4>
+                <p><strong>"</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ullam voluptatem provident! dolor sit amet consectetur adipisicing elit asperiores<strong>"</strong></p>
+            </div>
+        </div>
+        <div class="btn-grp">
+            <button onclick="Previous()" class="btn-previous"> </button>
+            <button onclick="Next()" class="btn-next"> </button>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-wrapper">
+
+            <div class="logo-wrapper">
+                <div class="logo"></div>
+                <h5>Icons Developers</h5>
+            </div>    
+                
+            <div class="links">
+                <p>Design and Development by Tyrone Valmores</p>
+                <p>Copyright © 2018</p>
+                <ul>
+                    <li><a href="https://www.facebook.com/johntyrone.valmores">fb</a></li>
+                    <li><a href="https://www.instagram.com/p/BkRu4oBHfd-/">In</a></li>
+                    <li><a href="#">Tw</a></li>
+                </ul>
+
+                <button class="btn-contact">Contact Us</button>
+            </div>
+        </div>
+    </footer>
+
 </body>
+<script src="js/functions.js"></script>
 </html>
